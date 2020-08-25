@@ -66,21 +66,21 @@ public class App
         System.out.println("jsonObject2: " + jsonObject2.toJSONString());
         System.out.println("jsonObject3: " + jsonObject3.toJSONString());
 
-        try (FileWriter file1 = new FileWriter(dir.toString() + "\\test1.json")) {
+        try (FileWriter file1 = new FileWriter(dir.toString() + "/test1.json")) {
             file1.write(jsonObject1.toJSONString());
             file1.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        try (FileWriter file2 = new FileWriter(dir.toString() + "\\test2.json")) {
+        try (FileWriter file2 = new FileWriter(dir.toString() + "/test2.json")) {
             file2.write(jsonObject2.toJSONString());
             file2.flush();
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        try (FileWriter file3 = new FileWriter(dir.toString() + "\\test3.json")) {
+        try (FileWriter file3 = new FileWriter(dir.toString() + "/test3.json")) {
             file3.write(jsonObject3.toJSONString());
             file3.flush();
         } catch (IOException e) {
